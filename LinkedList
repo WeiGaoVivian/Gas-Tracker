@@ -1,0 +1,16 @@
+
+public class LinkedList{ 
+	private Node front; 
+	private int count; 
+	//constructor 
+	public LinkedList() { 
+		front = null; count = 0; 
+	} 
+	//add a node to the front of the linked list 
+	public void addToFront(String d){ 
+		Node n; 
+		n = new Node(d, front);
+		front = n;
+		count++; 
+	}
+}
